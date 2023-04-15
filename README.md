@@ -1,9 +1,9 @@
 ![logo](media/logo.png)
 
-# Simpa: a simple XSAMPA to IPA converter
+# Simpa: a simple X-SAMPA to IPA converter
 
 ## What does it do?
-Simpa coverts any XSAMPA fed to it through stdin and outputs it to stdout as IPA.
+Simpa coverts any X-SAMPA fed to it through stdin and outputs it to stdout as IPA.
 
 ## Is that it?
 Yes, that's it. You can do whatever you want with this power. Here's some ideas:
