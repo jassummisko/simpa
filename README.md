@@ -22,3 +22,6 @@ Yes, that's it. You can do whatever you want with this power. Here's some ideas:
 ![demo3](media/demoscript.gif)
 
 The possibilities are endless!
+
+## Flags
+`-c use CSX (Conlang X-SAMPA)`

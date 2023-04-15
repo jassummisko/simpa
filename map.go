@@ -1,6 +1,6 @@
 package main
 
-var xsampamap map[string]string = map[string]string{
+var xsampamap = map[string]string{
 	"#":      "#",
 	"=":      "◌̩",
 	">":      "◌ʼ",
@@ -183,3 +183,13 @@ var xsampamap map[string]string = map[string]string{
 	"_5":     "˩",
 	"_":      "͡",
 }
+
+var cxsmap = copyMapWithDifferences(xsampamap, map[string]string{
+	"i\\": "Ɨ",
+	"u\\": "ʉ",
+	"&":   "æ",
+	"&\\": "ɶ",
+	"'":   "ˈ",
+	",":   "ˌ",
+	";":   "ʲ",
+})
