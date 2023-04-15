@@ -24,4 +24,4 @@ Yes, that's it. You can do whatever you want with this power. Here's some ideas:
 The possibilities are endless!
 
 ## Flags
-`-c use CSX (Conlang X-SAMPA)`
+`-c use CXS (Conlang X-SAMPA)`
