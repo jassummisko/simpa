@@ -10,14 +10,20 @@ import (
 )
 
 func main() {
-	var usemap map[string]string
+	usemap := xsampamap
 	cxsFlag := flag.Bool("c", false, "use CSX (Conlang X-SAMPA)")
+	replFlag := flag.Bool("r", false, "REPL mode")
 	flag.Parse()
+
 	if *cxsFlag {
 		usemap = cxsmap
-	} else {
-		usemap = xsampamap
 	}
+
+	if *replFlag {
+		replmode(usemap)
+		return
+	}
+
 	reader := bufio.NewReader(os.Stdin)
 	finalstr := ""
 	for {
@@ -33,6 +39,20 @@ func main() {
 	}
 	finalstr = strings.TrimRight(finalstr, "\n")
 	fmt.Print(mapxsampa(finalstr, usemap))
+}
+
+func replmode(inputMap map[string]string) {
+	var input string
+	var history []string
+	for {
+		fmt.Scan(&input)
+		if input == "---" {
+			history = append(history, input)
+			break
+		}
+		out := mapxsampa(input, inputMap)
+		fmt.Println(out)
+	}
 }
 
 func mapxsampa(input string, inputMap map[string]string) string {
