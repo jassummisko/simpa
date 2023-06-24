@@ -1,3 +1,4 @@
 simpa
 binaries/*
 build
+build.sh
