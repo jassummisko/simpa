@@ -27,4 +27,5 @@ The possibilities are endless!
 ```
 -c use CXS (Conlang X-SAMPA)
 -r REPL mode (type "---" to quit)
+-b Parse within // or [] only.
 ```
